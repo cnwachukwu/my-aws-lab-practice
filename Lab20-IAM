@@ -1,0 +1,14 @@
+#To do list
+
+create user, group and add user to group
+create a password policy
+set up an IAM role for ec2 instances
+create and account alias
+create a credential report
+
+status report
+
+user	arn	user_creation_time	password_enabled	password_last_used	password_last_changed	password_next_rotation	mfa_active	access_key_1_active	access_key_1_last_rotated	access_key_1_last_used_date	access_key_1_last_used_region	access_key_1_last_used_service	access_key_2_active	access_key_2_last_rotated	access_key_2_last_used_date	access_key_2_last_used_region	access_key_2_last_used_service	cert_1_active	cert_1_last_rotated	cert_2_active	cert_2_last_rotated
+<root_account>	arn:aws:iam::710090461781:root	2022-02-04T23:36:00+00:00	not_supported	2022-07-26T21:44:03+00:00	not_supported	not_supported	TRUE	FALSE	N/A	N/A	N/A	N/A	FALSE	N/A	N/A	N/A	N/A	FALSE	N/A	FALSE	N/A
+Admin	arn:aws:iam::710090461781:user/Admin	2022-07-14T18:28:56+00:00	TRUE	2022-07-26T21:50:04+00:00	2022-07-14T18:32:09+00:00	N/A	FALSE	TRUE	2022-07-14T18:28:57+00:00	N/A	N/A	N/A	FALSE	N/A	N/A	N/A	N/A	FALSE	N/A	FALSE	N/A
+test-user	arn:aws:iam::710090461781:user/test-user	2022-07-26T22:29:53+00:00	TRUE	no_information	2022-07-26T22:36:03+00:00	N/A	FALSE	TRUE	2022-07-26T22:29:54+00:00	N/A	N/A	N/A	FALSE	N/A	N/A	N/A	N/A	FALSE	N/A	FALSE	N/A
