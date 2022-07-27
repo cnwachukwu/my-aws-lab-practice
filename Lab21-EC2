@@ -1,0 +1,8 @@
+Connecting to EC2 Instance
+
+I will be usuing the Elastic Compute Cloud(EC2) services to launch an EC2 instance
+and then conncect to the Linux operating system of the instance usuing secure shell (SSH)
+
+Note: In most cases, the guessed user name is correct. However, read your AMI usage instructions to check if the AMI owner has changed the default AMI user name.
+
+In my case the username was bitnami i.e ssh -i "test.pem" bitnami@ec2-3-83-137-2.compute-1.amazonaws.com
