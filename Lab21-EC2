@@ -6,3 +6,577 @@ and then conncect to the Linux operating system of the instance usuing secure sh
 Note: In most cases, the guessed user name is correct. However, read your AMI usage instructions to check if the AMI owner has changed the default AMI user name.
 
 In my case the username was bitnami i.e ssh -i "test.pem" bitnami@ec2-3-83-137-2.compute-1.amazonaws.com
+
+[ 2.143475] Loaded X.509 cert 'Debian Secure Boot CA: 6ccece7e4c6c0d1f6149f3dd27dfcc5cbb419ea1'
+[ 2.155657] Loaded X.509 cert 'Debian Secure Boot Signer 2021 - linux: 4b6ef5abca669825178e052c84667ccbc0531f8c'
+[ 2.168915] Key type .\_fscrypt registered
+[ 2.172766] Key type .fscrypt registered
+[ 2.176614] Key type fscrypt-provisioning registered
+[ 2.180939] AppArmor: AppArmor sha1 policy hashing enabled
+[ 2.185938] xenbus_probe_frontend: Device with no driver: device/vbd/51712
+[ 2.192010] xenbus_probe_frontend: Device with no driver: device/vif/0
+[ 2.199311] Freeing unused kernel image (initmem) memory: 2232K
+[ 2.205103] Write protecting the kernel read-only data: 22528k
+[ 2.212272] Freeing unused kernel image (text/rodata gap) memory: 2040K
+[ 2.220219] Freeing unused kernel image (rodata/data gap) memory: 1248K
+[ 2.229045] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[ 2.236122] x86/mm: Checking user space page tables
+[ 2.241017] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[ 2.248193] Run /init as init process
+Loading, please wait...
+Success: Disabled IPv6 DAD
+Starting version 247.3-7
+[ 2.378771] SCSI subsystem initialized
+[ 2.390335] Invalid max_queues (4), will use default max: 1.
+[ 2.398927] xen_netfront: Initialising Xen virtual ethernet driver
+[ 2.436391] scsi host0: ata_piix
+[ 2.441837] scsi host1: ata_piix
+[ 2.447224] ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc100 irq 14
+[ 2.456158] ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc108 irq 15
+[ 2.491671] blkfront: xvda: barrier or flush: disabled; persistent grants: disabled; indirect descriptors: enabled;
+[ 2.514861] xvda: xvda1 xvda14 xvda15
+Begin: Loading essential drivers ... done.
+Begin: Running /scripts/init-premount ... done.
+Begin: Mounting root file system ... Begin: Running /scripts/local-top ... done.
+Begin: Running /scripts/local-premount ... done.
+Begin: Will now check root file system ... fsck from util-linux 2.36.1
+[/sbin/fsck.ext4 (1) -- /dev/xvda1] fsck.ext4 -a -C0 /dev/xvda1
+/dev/xvda1: clean, 71857/647168 files, 593183/2588667 blocks
+done.
+[ 2.840084] EXT4-fs (xvda1): mounted filesystem with ordered data mode. Opts: (null)
+done.
+Begin: Running /scripts/local-bottom ... GROWROOT: NOCHANGE: partition 1 is size 20709343. it cannot be grown
+done.
+Begin: Running /scripts/init-bottom ... done.
+[ 2.927428] Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+[ 3.144210] systemd[1]: Inserted module 'autofs4'
+[ 3.174096] systemd[1]: systemd 247.3-7 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +ZSTD +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=unified)
+[ 3.196887] systemd[1]: Detected virtualization xen.
+[ 3.203504] systemd[1]: Detected architecture x86-64.
+
+Welcome to [1mDebian GNU/Linux 11 (bullseye)[0m!
+
+[ 3.218241] systemd[1]: Set hostname to <ip-10-10-102-12>.
+[ 3.619886] systemd[1]: /etc/systemd/system/bitnami.service:17: Support for option SysVStartPriority= has been removed and it is ignored
+[ 3.657219] systemd[1]: Condition check resulted in System Slice being skipped.
+[ 3.665110] systemd[1]: Condition check resulted in Root Slice being skipped.
+[ 3.673895] systemd[1]: Queued start job for default target Graphical Interface.
+[ 3.683492] systemd[1]: Created slice system-modprobe.slice.
+[[0;32m OK [0m] Created slice [0;1;39msystem-modprobe.slice[0m.
+[ 3.694244] systemd[1]: Created slice system-systemd\x2dgrowfs.slice.
+[[0;32m OK [0m] Created slice [0;1;39msystem-systemd\x2dgrowfs.slice[0m.
+[ 3.706328] systemd[1]: Created slice User and Session Slice.
+[[0;32m OK [0m] Created slice [0;1;39mUser and Session Slice[0m.
+[ 3.717148] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[[0;32m OK [0m] Started [0;1;39mDispatch Password â¦ts to Console Directory Watch[0m.
+[ 3.730729] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[[0;32m OK [0m] Started [0;1;39mForward Password Râ¦uests to Wall Directory Watch[0m.
+[ 3.744423] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[[0;32m OK [0m] Set up automount [0;1;39mArbitraryâ¦s File System Automount Point[0m.
+[ 3.760870] systemd[1]: Reached target Local Encrypted Volumes.
+[[0;32m OK [0m] Reached target [0;1;39mLocal Encrypted Volumes[0m.
+[ 3.772193] systemd[1]: Reached target Paths.
+[[0;32m OK [0m] Reached target [0;1;39mPaths[0m.
+[ 3.781479] systemd[1]: Reached target Remote File Systems.
+[[0;32m OK [0m] Reached target [0;1;39mRemote File Systems[0m.
+[ 3.792083] systemd[1]: Reached target Slices.
+[[0;32m OK [0m] Reached target [0;1;39mSlices[0m.
+[ 3.800840] systemd[1]: Reached target Swap.
+[[0;32m OK [0m] Reached target [0;1;39mSwap[0m.
+[ 3.809093] systemd[1]: Reached target System Time Set.
+[[0;32m OK [0m] Reached target [0;1;39mSystem Time Set[0m.
+[ 3.816889] systemd[1]: Listening on Syslog Socket.
+[[0;32m OK [0m] Listening on [0;1;39mSyslog Socket[0m.
+[ 3.824417] systemd[1]: Listening on fsck to fsckd communication Socket.
+[[0;32m OK [0m] Listening on [0;1;39mfsck to fsckd communication Socket[0m.
+[ 3.834072] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[[0;32m OK [0m] Listening on [0;1;39minitctl Compatibility Named Pipe[0m.
+[ 3.843496] systemd[1]: Listening on Journal Audit Socket.
+[[0;32m OK [0m] Listening on [0;1;39mJournal Audit Socket[0m.
+[ 3.852409] systemd[1]: Listening on Journal Socket (/dev/log).
+[[0;32m OK [0m] Listening on [0;1;39mJournal Socket (/dev/log)[0m.
+[ 3.862267] systemd[1]: Listening on Journal Socket.
+[[0;32m OK [0m] Listening on [0;1;39mJournal Socket[0m.
+[ 3.871436] systemd[1]: Listening on udev Control Socket.
+[[0;32m OK [0m] Listening on [0;1;39mudev Control Socket[0m.
+[ 3.881814] systemd[1]: Listening on udev Kernel Socket.
+[[0;32m OK [0m] Listening on [0;1;39mudev Kernel Socket[0m.
+[ 3.892927] systemd[1]: Mounting Huge Pages File System...
+Mounting [0;1;39mHuge Pages File System[0m...
+[ 3.905482] systemd[1]: Mounting POSIX Message Queue File System...
+Mounting [0;1;39mPOSIX Message Queue File System[0m...
+[ 3.918752] systemd[1]: Mounting Kernel Debug File System...
+Mounting [0;1;39mKernel Debug File System[0m...
+[ 3.929943] systemd[1]: Mounting Kernel Trace File System...
+Mounting [0;1;39mKernel Trace File System[0m...
+[ 3.941438] systemd[1]: Starting Create list of static device nodes for the current kernel...
+Starting [0;1;39mCreate list of stâ¦odes for the current kernel[0m...
+[ 3.955643] systemd[1]: Starting Load Kernel Module configfs...
+Starting [0;1;39mLoad Kernel Module configfs[0m...
+[ 3.968609] systemd[1]: Starting Load Kernel Module drm...
+Starting [0;1;39mLoad Kernel Module drm[0m...
+[ 3.983898] systemd[1]: Starting Load Kernel Module fuse...
+Starting [0;1;39mLoad Kernel Module fuse[0m...
+[ 3.995169] systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+[ 4.002372] systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+[ 4.017367] systemd[1]: Starting Journal Service...
+[ 4.022666] fuse: init (API version 7.32)
+Starting [0;1;39mJournal Service[0m...
+[ 4.041376] systemd[1]: Starting Load Kernel Modules...
+Starting [0;1;39mLoad Kernel Modules[0m...
+[ 4.068297] systemd[1]: Starting Remount Root and Kernel File Systems...
+Starting [0;1;39mRemount Root and Kernel File Systems[0m...
+[ 4.092007] systemd[1]: Starting Coldplug All udev Devices...
+[ 4.105491] EXT4-fs (xvda1): re-mounted. Opts: discard,errors=remount-ro
+Starting [0;1;39mColdplug All udev Devices[0m...
+[ 4.129990] systemd[1]: Mounted Huge Pages File System.
+[[0;32m OK [0m] Mounted [0;1;39mHuge Pages File System[0m.
+[ 4.151518] systemd[1]: Started Journal Service.
+[[0;32m OK [0m] Started [0;1;39mJournal Service[0m.
+[[0;32m OK [0m] Mounted [0;1;39mPOSIX Message Queue File System[0m.
+[[0;32m OK [0m] Mounted [0;1;39mKernel Debug File System[0m.
+[[0;32m OK [0m] Mounted [0;1;39mKernel Trace File System[0m.
+[[0;32m OK [0m] Finished [0;1;39mCreate list of stâ¦ nodes for the current kernel[0m.
+[[0;32m OK [0m] Finished [0;1;39mLoad Kernel Module configfs[0m.
+[[0;32m OK [0m] Finished [0;1;39mLoad Kernel Module drm[0m.
+[[0;32m OK [0m] Finished [0;1;39mLoad Kernel Module fuse[0m.
+[[0;32m OK [0m] Finished [0;1;39mLoad Kernel Modules[0m.
+[[0;32m OK [0m] Finished [0;1;39mRemount Root and Kernel File Systems[0m.
+Mounting [0;1;39mFUSE Control File System[0m...
+Mounting [0;1;39mKernel Configuration File System[0m...
+Starting [0;1;39mInitial cloud-init job (pre-networking)[0m...
+Starting [0;1;39mGrow File System on /[0m...
+Starting [0;1;39mFlush Journal to Persistent Storage[0m...[ 4.264673] EXT4-fs (xvda1): resizing filesystem from 2588667 to 2588667 blocks
+
+         Starting [0;1;39mLoad/Save Random Seed[0m...
+         Starting [0;1;39mApply Kernel Variables[0m...
+         Starting [0;1;39mCreate System Users[0m...
+
+[ 4.328484] systemd-journald[195]: Received client request to flush runtime journal.
+[[0;32m OK [0m] Mounted [0;1;39mFUSE Control File System[0m.
+[[0;32m OK [0m] Finished [0;1;39mColdplug All udev Devices[0m.
+[[0;32m OK [0m] Mounted [0;1;39mKernel Configuration File System[0m.
+[[0;32m OK [0m] Finished [0;1;39mGrow File System on /[0m.
+[[0;32m OK [0m] Finished [0;1;39mApply Kernel Variables[0m.
+[[0;32m OK [0m] Finished [0;1;39mLoad/Save Random Seed[0m.
+Starting [0;1;39mHelper to synchronize boot up for ifupdown[0m...
+[[0;32m OK [0m] Finished [0;1;39mCreate System Users[0m.
+Starting [0;1;39mCreate Static Device Nodes in /dev[0m...
+[[0;32m OK [0m] Finished [0;1;39mHelper to synchronize boot up for ifupdown[0m.
+[[0;32m OK [0m] Finished [0;1;39mFlush Journal to Persistent Storage[0m.
+[[0;32m OK [0m] Finished [0;1;39mCreate Static Device Nodes in /dev[0m.
+[[0;32m OK [0m] Reached target [0;1;39mLocal File Systems (Pre)[0m.
+Starting [0;1;39mRule-based Manageâ¦for Device Events and Files[0m...
+[[0;32m OK [0m] Started [0;1;39mRule-based Manager for Device Events and Files[0m.
+[ 4.576996] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input2
+[ 4.655147] ACPI: Power Button [PWRF]
+[ 4.678361] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input3
+[ 4.707181] ACPI: Sleep Button [SLPF]
+[ 4.813279] RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 655360 ms ovfl timer
+[[0;32m OK [0m] Found device [0;1;39m/dev/disk/by-uuid/DFF0-D616[0m.
+Mounting [0;1;39m/boot/efi[0m...
+[ 4.865776] cryptd: max_cpu_qlen set to 1000
+[ 4.899574] AVX2 version of gcm_enc/dec engaged.
+[ 4.904917] AES CTR mode by8 optimization enabled
+[[0;32m OK [0m] Mounted [0;1;39m/boot/efi[0m.
+[[0;32m OK [0m] Reached target [0;1;39mLocal File Systems[0m.
+Starting [0;1;39mLoad AppArmor profiles[0m...
+Starting [0;1;39mCreate Volatile Files and Directories[0m...
+[[0;32m OK [0m] Finished [0;1;39mCreate Volatile Files and Directories[0m.
+Starting [0;1;39mUpdate UTMP about System Boot/Shutdown[0m...
+[ 5.081027] audit: type=1400 audit(1658942859.712:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=296 comm="apparmor_parser"
+[[0;32m OK [0m] Finished [0;1;39mUpdate UTMP about System Boot/Shutdown[0m.
+[[0;32m OK [0m] Found device [0;1;39m/sys/subsystem/net/devices/eth0[0m.[ 5.144948] audit: type=1400 audit(1658942859.748:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=303 comm="apparmor_parser"
+
+[ 5.162370] audit: type=1400 audit(1658942859.748:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=303 comm="apparmor_parser"
+[ 5.178143] audit: type=1400 audit(1658942859.748:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=303 comm="apparmor_parser"
+[ 5.194715] audit: type=1400 audit(1658942859.764:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/haveged" pid=307 comm="apparmor_parser"
+[ 5.209740] audit: type=1400 audit(1658942859.768:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=309 comm="apparmor_parser"
+[ 5.225709] audit: type=1400 audit(1658942859.768:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=309 comm="apparmor_parser"
+[ 5.253573] audit: type=1400 audit(1658942859.884:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="tcpdump" pid=310 comm="apparmor_parser"
+[[0;32m OK [0m] Finished [0;1;39mLoad AppArmor profiles[0m.
+[ 5.280092] audit: type=1400 audit(1658942859.904:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/chronyd" pid=311 comm="apparmor_parser"
+[[0;32m OK [0m] Started [0;1;39mEntropy Daemon based on the HAVEGE algorithm[0m.
+[ 5.535570] cloud-init[316]: Cloud-init v. 20.4.1 running 'init-local' at Wed, 27 Jul 2022 17:27:40 +0000. Up 5.50 seconds.
+[[0;32m OK [0m] Finished [0;1;39mInitial cloud-init job (pre-networking)[0m.
+[[0;32m OK [0m] Reached target [0;1;39mNetwork (Pre)[0m.
+[[0;32m OK [0m] Started [0;1;39mifup for eth0[0m.
+Starting [0;1;39mRaise network interfaces[0m...
+[[0;32m OK [0m] Finished [0;1;39mRaise network interfaces[0m.
+[[0;32m OK [0m] Reached target [0;1;39mNetwork[0m.
+Starting [0;1;39mInitial cloud-iniâ¦ (metadata service crawler)[0m...
+[ 56.702376] cloud-init[464]: Cloud-init v. 20.4.1 running 'init' at Wed, 27 Jul 2022 17:28:31 +0000. Up 56.67 seconds.
+[ 56.725845] cloud-init[464]: ci-info: +++++++++++++++++++++++++++++++++++++++Net device info+++++++++++++++++++++++++++++++++++++++
+[ 56.742510] cloud-init[464]: ci-info: +--------+------+------------------------------+---------------+--------+-------------------+
+[ 56.762740] cloud-init[464]: ci-info: | Device | Up | Address | Mask | Scope | Hw-Address |
+[ 56.779424] cloud-init[464]: ci-info: +--------+------+------------------------------+---------------+--------+-------------------+
+[ 56.798750] cloud-init[464]: ci-info: | eth0 | True | 172.31.84.130 | 255.255.240.0 | global | 12:33:7e:c5:30:31 |
+[ 56.814477] cloud-init[464]: ci-info: | eth0 | True | fe80::1033:7eff:fec5:3031/64 | . | link | 12:33:7e:c5:30:31 |
+[ 56.833926] cloud-init[464]: ci-info: | lo | True | 127.0.0.1 | 255.0.0.0 | host | . |
+[ 56.849868] cloud-init[464]: ci-info: | lo | True | ::1/128 | . | host | . |
+[ 56.869832] cloud-init[464]: ci-info: +--------+------+------------------------------+---------------+--------+-------------------+
+[ 56.885795] cloud-init[464]: ci-info: +++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++
+[ 56.894769] cloud-init[464]: ci-info: +-------+-------------+-------------+---------------+-----------+-------+
+[ 56.902454] cloud-init[464]: ci-info: | Route | Destination | Gateway | Genmask | Interface | Flags |
+[ 56.909134] cloud-init[464]: ci-info: +-------+-------------+-------------+---------------+-----------+-------+
+[ 56.915749] cloud-init[464]: ci-info: | 0 | 0.0.0.0 | 172.31.80.1 | 0.0.0.0 | eth0 | UG |
+[ 56.923202] cloud-init[464]: ci-info: | 1 | 172.31.80.0 | 0.0.0.0 | 255.255.240.0 | eth0 | U |
+[ 56.930514] cloud-init[464]: ci-info: +-------+-------------+-------------+---------------+-----------+-------+
+[ 56.936750] cloud-init[464]: ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+[ 56.942595] cloud-init[464]: ci-info: +-------+-------------+---------+-----------+-------+
+[ 56.948205] cloud-init[464]: ci-info: | Route | Destination | Gateway | Interface | Flags |
+[ 56.953293] cloud-init[464]: ci-info: +-------+-------------+---------+-----------+-------+
+[ 56.957810] cloud-init[464]: ci-info: | 1 | fe80::/64 | :: | eth0 | U |
+[ 56.965779] cloud-init[464]: ci-info: | 3 | local | :: | eth0 | U |
+[ 56.977881] cloud-init[464]: ci-info: | 4 | multicast | :: | eth0 | U |
+[ 56.990433] cloud-init[464]: ci-info: +-------+-------------+---------+-----------+-------+
+[ 57.877971] cloud-init[464]: Generating public/private rsa key pair.
+[ 57.890702] cloud-init[464]: Your identification has been saved in /etc/ssh/ssh_host_rsa_key
+[ 57.906686] cloud-init[464]: Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub
+[ 57.918494] cloud-init[464]: The key fingerprint is:
+[ 57.929843] cloud-init[464]: SHA256:qzz1VOckdZQSS27FqtBjp6E4DXKlwfTy3HWxCzi5V1A root@ip-172-31-84-130
+[ 57.938601] cloud-init[464]: The key's randomart image is:
+[ 57.949862] cloud-init[464]: +---[RSA 3072]----+
+[ 57.958497] cloud-init[464]: | o. ++Eo|
+[ 57.967984] cloud-init[464]: | o.. =.=o+|
+[[0;32m OK [0m] Finished [0;1;39mInitial cloud-iniâ¦ob (metadata service crawler)[0m.
+[ 57.976379] cloud-init[464]: | .+..+ Bo= |
+[[0;32m OK [0m] Reached target [0;1;39mCloud-config availability[0m.
+[ 57.982988] cloud-init[464]: | . ++..=Bo* .|
+[ 57.986292] cloud-init[464]: | o So++\*\* . |
+[ 57.988975] cloud-init[464]: | o.+.o. . |
+[[0;32m OK [0m] Reached target [0;1;39mNetwork is Online[0m.
+[[0;32m OK [0m] Reached target [0;1;39mSystem Initialization[0m.
+[ 57.998577] cloud-init[464]: | .oo |
+[ 58.003406] cloud-init[464]: | ... . |
+[[0;32m OK [0m] Started [0;1;39mDaily Cleanup of Temporary Directories[0m.
+[ 58.013655] cloud-init[464]: | o. |
+[ 58.017188] cloud-init[464]: +----[SHA256]-----+
+[[0;32m OK [0m] Listening on [0;1;39mD-Bus System Message Bus Socket[0m.
+[ 58.026523] cloud-init[464]: Generating public/private dsa key pair.
+[[0;32m OK [0m] Listening on [0;1;39mUUID daemon activation socket[0m.
+[ 58.038124] cloud-init[464]: Your identification has been saved in /etc/ssh/ssh_host_dsa_key
+[[0;32m OK [0m] Reached target [0;1;39mSockets[0m.
+[ 58.053926] cloud-init[464]: Your public key has been saved in /etc/ssh/ssh_host_dsa_key.pub
+[[0;32m OK [0m] Reached target [0;1;39mBasic System[0m.
+[ 58.067201] cloud-init[464]: The key fingerprint is:
+Starting [0;1;39mDeferred execution scheduler[0m...
+[ 58.077136] cloud-init[464]: SHA256:cSLtABMyMYpjAW0awAW/g+rLGAo00W+ZFVn9UPMa/uc root@ip-172-31-84-130
+Starting [0;1;39mLSB: bitnami init script[0m...
+[ 58.090277] cloud-init[464]: The key's randomart image is:
+Starting [0;1;39mchrony, an NTP client/server[0m...
+[ 58.099467] cloud-init[464]: +---[DSA 1024]----+
+Starting [0;1;39mApply the settings specified in cloud-config[0m...
+[ 58.113866] cloud-init[464]: |*+Bo+. .o.. .o |
+[ 58.116956] cloud-init[464]: |oo*+ o o. o o |
+[[0;32m OK [0m] Started [0;1;39mRegular background program processing daemon[0m.
+[ 58.130791] cloud-init[464]: |+* o o.+ . o. . |
+[[0;32m OK [0m] Started [0;1;39mD-Bus System Message Bus[0m.
+[ 58.147826] cloud-init[464]: |o.o o ++ + ..o |
+[ 58.161518] cloud-init[464]: | + o = S o |
+Starting [0;1;39mRemove Stale Onliâ¦t4 Metadata Check Snapshots[0m...
+[ 58.187795] cloud-init[464]: |o . o . |
+[ 58.196610] cloud-init[464]: |+ ..|
+Starting [0;1;39mSystem Logging Service[0m...
+[ 58.209468] cloud-init[464]: |_. ..|
+[ 58.215726] cloud-init[464]: |o+. E|
+[ 58.223692] cloud-init[464]: +----[SHA256]-----+
+Starting [0;1;39mOpenBSD Secure Shell server[0m...
+[ 58.235352] cloud-init[464]: Generating public/private ecdsa key pair.
+Starting [0;1;39mUser Login Management[0m...
+[ 58.255358] cloud-init[464]: Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key
+Starting [0;1;39mPermit User Sessions[0m...
+[[0;32m OK [0m] Started [0;1;39mDeferred execution scheduler[0m.
+[ 58.303454] cloud-init[464]: Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub
+[[0;32m OK [0m] Started [0;1;39mSystem Logging Service[0m.
+[ 58.334968] cloud-init[464]: The key fingerprint is:
+[[0;32m OK [0m] Finished [0;1;39mPermit User Sessions[0m.
+[ 58.357929] cloud-init[464]: SHA256:lE8+f2G/k89hVxwSG3ACpolm5QcJ/zu07FugsJnCyUM root@ip-172-31-84-130
+[ 58.376612] cloud-init[464]: The key's randomart image is:
+[ 58.389470] cloud-init[464]: +---[ECDSA 256]---+
+[ 58.396170] cloud-init[464]: | ..o.o.o.+ |
+[ 58.402548] cloud-init[464]: | =.=. o + |
+[ 58.411036] cloud-init[464]: | + =o.. o . |
+[ 58.418204] cloud-init[464]: | o .o+ ...|
+[ 58.425855] cloud-init[464]: | E . S++ o o|
+[ 58.433253] cloud-init[464]: | + . = + +o . o.|
+[ 58.441745] cloud-init[464]: | _ + . = .. .o+|
+[ 58.455349] cloud-init[464]: | o . o ..++|
+[ 58.466020] cloud-init[464]: | o. .=|
+[ 58.480548] cloud-init[464]: +----[SHA256]-----+
+[[0;32m OK [0m] Started [0;1;39mUser Login Management[0m.
+[ 58.512867] cloud-init[464]: Generating public/private ed25519 key pair.
+[[0;32m OK [0m] Started [0;1;39mUnattended Upgrades Shutdown[0m.
+[ 58.534016] cloud-init[464]: Your identification has been saved in /etc/ssh/ssh_host_ed25519_key
+[[0;32m OK [0m] Started [0;1;39mchrony, an NTP client/server[0m.
+[ 58.570390] cloud-init[464]: Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub
+[[0;32m OK [0m] Reached target [0;1;39mSystem Time Synchronized[0m.
+[ 58.599628] cloud-init[464]: The key fingerprint is:
+[ 58.613945] cloud-init[464]: SHA256:fvUKEf2b06tzoEYdp7+VkYyOfQstZhOF5WJa0/gzUA0 root@ip-172-31-84-130
+[[0;32m OK [0m] Started [0;1;39mDaily apt download activities[0m.
+[ 58.650696] cloud-init[464]: The key's randomart image is:
+[[0;32m OK [0m] Started [0;1;39mDaily apt upgrade and clean activities[0m.
+[ 58.661887] cloud-init[464]: +--[ED25519 256]--+
+[[0;32m OK [0m] Started [0;1;39mPeriodic ext4 Onliâ¦ata Check for All Filesystems[0m.
+[ 58.681896] cloud-init[464]: | E+.|
+[ 58.694115] cloud-init[464]: | . B .|
+[[0;32m OK [0m] Started [0;1;39mDiscard unused blocks once a week[0m.
+[ 58.710113] cloud-init[464]: | . .O + |
+[[0;32m OK [0m] Started [0;1;39mDaily rotation of log files[0m.
+[ 58.725914] cloud-init[464]: | .+oO..|
+[[0;32m OK [0m] Started [0;1;39mDaily man-db regeneration[0m.
+[ 58.741210] cloud-init[464]: | S ..oo=B |
+[ 58.757892] cloud-init[464]: | . ++=o+=|
+[[0;32m OK [0m] Reached target [0;1;39mTimers[0m.
+[ 58.773888] cloud-init[464]: | . +..OB+o|
+Starting [0;1;39mOnline ext4 Metadâ¦a Check for All Filesystems[0m...
+[ 58.791137] cloud-init[464]: | . +oo=++|
+[ 58.813713] cloud-init[464]: | . ..++.|
+Starting [0;1;39mRotate log files[0m...
+[ 58.834587] cloud-init[464]: +----[SHA256]-----+
+Starting [0;1;39mDaily man-db regeneration[0m...
+[ 58.870768] bitnami[519]: ## 2022-07-27 17:28:33+00:00 ## INFO ## Running /opt/bitnami/var/init/pre-start/010_hostname...
+[[0;32m OK [0m] Finished [0;1;39mOnline ext4 Metadata Check for All Filesystems[0m.
+[ 58.901963] bitnami[519]: ## 2022-07-27 17:28:33+00:00 ## INFO ## Running /opt/bitnami/var/init/pre-start/020_swap_file...
+[[0;32m OK [0m] Started [0;1;39mOpenBSD Secure Shell server[0m.
+[ 59.288566] cloud-init[563]: Cloud-init v. 20.4.1 running 'modules:config' at Wed, 27 Jul 2022 17:28:34 +0000. Up 59.17 seconds.
+[ 59.715289] device-mapper: uevent: version 1.0.3
+[ 59.727680] device-mapper: ioctl: 4.43.0-ioctl (2020-10-01) initialised: dm-devel@redhat.com
+[[0;32m OK [0m] Finished [0;1;39mRemove Stale Onliâ¦ext4 Metadata Check Snapshots[0m.
+[[0;32m OK [0m] Finished [0;1;39mApply the settings specified in cloud-config[0m.
+[[0;32m OK [0m] Finished [0;1;39mRotate log files[0m.
+[[0;32m OK [0m] Finished [0;1;39mDaily man-db regeneration[0m.
+[ 66.195102] bitnami[519]: 650000+0 records in
+[ 66.200293] bitnami[519]: 650000+0 records out
+[ 66.206623] bitnami[519]: 665600000 bytes (666 MB, 635 MiB) copied, 7.69995 s, 86.4 MB/s
+[ 68.691701] bitnami[519]: Setting up swapspace version 1, size = 634.8 MiB (665595904 bytes)
+[ 68.698455] bitnami[519]: no label, UUID=8b3093c8-4317-477f-8596-0e90eae8cec3[ 69.128134] Adding 649996k swap on /mnt/.bitnami.swap. Priority:-2 extents:16 across:1624844k SSFS
+
+[ 68.715887] bitnami[519]: ## 2022-07-27 17:28:43+00:00 ## INFO ## Running /opt/bitnami/var/init/pre-start/030*check_if_demo_machine...
+[ 68.802381] bitnami[519]: ## 2022-07-27 17:28:43+00:00 ## INFO ## Running /opt/bitnami/var/init/pre-start/040_change_boot_log_permissions...
+[ 68.814375] bitnami[519]: ## 2022-07-27 17:28:43+00:00 ## INFO ## Running /opt/bitnami/var/init/pre-start/050_get_default_passwords...
+[ 69.015457] bitnami[519]: #########################################################################
+[ 69.026002] bitnami[519]: # #
+[ 69.034504] bitnami[519]: # Setting Bitnami application password to '6AX718EAqxb9' #
+[ 69.042011] bitnami[519]: # (the default application username is 'user') #
+[ 69.049402] bitnami[519]: # #
+[ 69.056718] bitnami[519]: #########################################################################
+[ 69.093847] bitnami[502]: ## 2022-07-27 17:28:43+00:00 ## INFO ## Running first-boot...
+[ 70.861796] bitnami[1029]: 2022-07-27T17:28:45.704Z - info: Saving configuration info to disk
+[ 72.244423] bitnami[1029]: 2022-07-27T17:28:47.087Z - info: Saving configuration info to disk
+[ 72.257051] bitnami[1029]: 2022-07-27T17:28:47.095Z - warn: No peerAddress provided. Skipping hosts file section
+[ 73.073598] bitnami[1029]: 2022-07-27T17:28:47.917Z - info: Initializing module bndiagnostic
+[ 73.089962] bitnami[1029]: 2022-07-27T17:28:47.924Z - info: Initializing module gonit
+[ 73.102549] bitnami[1029]: 2022-07-27T17:28:47.924Z - info: Initializing module render-template
+[ 73.117894] bitnami[1029]: 2022-07-27T17:28:47.924Z - info: Initializing module ini-file
+[ 73.130683] bitnami[1029]: 2022-07-27T17:28:47.924Z - info: Initializing module gosu
+[ 73.142521] bitnami[1029]: 2022-07-27T17:28:47.925Z - info: Initializing module php
+[ 73.558063] bitnami[1029]: [38;5;6mphp [38;5;5m17:28:48.38 [0m[38;5;2mINFO [0m ==> Configuring PHP options
+[ 73.571173] bitnami[1029]: [38;5;6mphp [38;5;5m17:28:48.38 [0m[38;5;2mINFO [0m ==> Setting PHP expose_php option
+[ 78.626102] bitnami[1029]: [38;5;6mphp [38;5;5m17:28:53.46 [0m[38;5;2mINFO [0m ==> php-fpm started
+[ 78.641953] bitnami[1029]: 2022-07-27T17:28:53.468Z - info: Initializing module mariadb
+[ 90.886084] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:28:53.85 [0m[38;5;2mINFO [0m ==> Validating settings in MYSQL*_/MARIADB\__ env vars
+[ 90.901640] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:28:53.86 [0m[38;5;2mINFO [0m ==> Initializing mariadb database
+[ 90.914180] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:28:53.88 [0m[38;5;2mINFO [0m ==> Updating 'my.cnf' with custom configuration
+[ 90.929926] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:28:53.89 [0m[38;5;2mINFO [0m ==> Setting user option
+[ 90.942653] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:28:54.13 [0m[38;5;2mINFO [0m ==> Setting bind*address option
+[ 90.952294] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:28:54.13 [0m[38;5;2mINFO [0m ==> Setting slow_query_log option
+[ 90.963829] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:28:54.14 [0m[38;5;2mINFO [0m ==> Setting long_query_time option
+[ 90.978486] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:28:54.15 [0m[38;5;2mINFO [0m ==> Installing database
+[ 90.989635] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:28:57.45 [0m[38;5;2mINFO [0m ==> Starting mariadb in background
+[ 91.003233] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:28:59.48 [0m[38;5;2mINFO [0m ==> Configuring authentication
+[ 91.022030] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:28:59.56 [0m[38;5;2mINFO [0m ==> Running mysql_upgrade
+[ 91.034439] bitnami[1029]: find: â/docker-entrypoint-initdb.d/â: No such file or directory
+[ 91.042404] bitnami[1029]: find: â/docker-entrypoint-startdb.d/â: No such file or directory
+[ 91.054003] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:29:04.68 [0m[38;5;2mINFO [0m ==> Stopping mariadb
+[ 96.071893] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:29:10.91 [0m[38;5;2mINFO [0m ==> mariadb started
+[ 96.084716] bitnami[1029]: 2022-07-27T17:29:10.914Z - info: Initializing module apache
+[ 96.470284] bitnami[1029]: [38;5;6mapache [38;5;5m17:29:11.30 [0m[38;5;2mINFO [0m ==> Configuring Apache ServerTokens directive
+[ 96.486703] bitnami[1029]: 2022-07-27T17:29:11.313Z - info: Initializing module wp-cli
+[ 96.502747] bitnami[1029]: 2022-07-27T17:29:11.313Z - info: Initializing module varnish
+[ 96.879946] bitnami[1029]: 2022-07-27T17:29:11.721Z - info: Initializing module phpmyadmin
+[ 98.059325] bitnami[1029]: [38;5;6mphpmyadmin [38;5;5m17:29:12.11 [0m[38;5;2mINFO [0m ==> Configuring phpMyAdmin
+[ 98.074620] bitnami[1029]: [38;5;6mphpmyadmin [38;5;5m17:29:12.11 [0m[38;5;2mINFO [0m ==> Setting blowfish_secret option to a randomly generated value
+[ 98.094714] bitnami[1029]: [38;5;6mphpmyadmin [38;5;5m17:29:12.13 [0m[38;5;2mINFO [0m ==> Enabling web server prefix configuration for phpMyAdmin
+[ 98.114568] bitnami[1029]: 2022-07-27T17:29:12.902Z - info: Initializing module mysql-client
+[ 98.461400] bitnami[1029]: [38;5;6mmysql [38;5;5m17:29:13.30 [0m[38;5;2mINFO [0m ==> Validating settings in MYSQL_CLIENT*\* env vars
+[ 98.482760] bitnami[1029]: 2022-07-27T17:29:13.304Z - info: Initializing module libphp
+[ 98.497877] bitnami[1029]: 2022-07-27T17:29:13.304Z - info: Initializing module brotli
+[ 98.510687] bitnami[1029]: 2022-07-27T17:29:13.304Z - info: Initializing module bncert
+[ 98.526682] bitnami[1029]: 2022-07-27T17:29:13.304Z - info: Initializing module wordpress
+[ 120.445584] bitnami[1029]: [38;5;6mwordpress [38;5;5m17:29:17.25 [0m[38;5;2mINFO [0m ==> Ensuring WordPress directories exist
+[ 120.453594] bitnami[1029]: [38;5;6mwordpress [38;5;5m17:29:17.26 [0m[38;5;2mINFO [0m ==> Trying to connect to the database server
+[ 120.461985] bitnami[1029]: [38;5;6mwordpress [38;5;5m17:29:17.48 [0m[38;5;2mINFO [0m ==> Configuring WordPress with settings provided via environment variables
+[ 120.474190] bitnami[1029]: [38;5;6mwordpress [38;5;5m17:29:19.06 [0m[38;5;2mINFO [0m ==> Installing WordPress
+[ 120.484807] bitnami[1029]: [38;5;6mwordpress [38;5;5m17:29:22.09 [0m[38;5;2mINFO [0m ==> Persisting WordPress installation
+[ 120.498356] bitnami[1029]: [38;5;6mwordpress [38;5;5m17:29:35.27 [0m[38;5;2mINFO [0m ==> Granting WordPress files ownership to the 'bitnami' user
+[ 120.508382] bitnami[1029]: 2022-07-27T17:29:35.287Z - info: Activating plugin jetpack...
+[ 120.913247] bitnami[1029]: 2022-07-27T17:29:35.755Z - info: Setting Bitnami Affiliate Code...
+[ 121.316708] bitnami[1029]: 2022-07-27T17:29:36.160Z - info: Saving configuration info to disk
+[ 121.328576] bitnami[1029]: 2022-07-27T17:29:36.169Z - info: Saving configuration info to disk
+[ 121.360049] bitnami[1029]: 2022-07-27T17:29:36.203Z - info: Data disk not present
+[ 124.351027] bitnami[502]: ## 2022-07-27 17:29:39+00:00 ## INFO ## Starting services...
+[ 124.668250] bitnami[1833]: 2022-07-27T17:29:39.510Z - info: Saving configuration info to disk
+[ 126.775538] bitnami[1833]: 2022-07-27T17:29:41.618Z - info: Performing service start operation for php
+[ 126.806111] bitnami[1833]: [38;5;6mphp [38;5;5m17:29:41.64 [0m[38;5;2mINFO [0m ==> php-fpm is already running
+[ 126.820115] bitnami[1833]: 2022-07-27T17:29:41.649Z - info: Performing service start operation for mariadb
+[ 126.849793] bitnami[1833]: [38;5;6mmariadb [38;5;5m17:29:41.69 [0m[38;5;2mINFO [0m ==> mariadb is already running
+[ 126.860461] bitnami[1833]: 2022-07-27T17:29:41.692Z - info: Performing service start operation for apache
+[ 132.111391] bitnami[1833]: [38;5;6mapache [38;5;5m17:29:46.95 [0m[38;5;2mINFO [0m ==> apache started
+[ 132.130189] bitnami[1833]: 2022-07-27T17:29:46.954Z - info: Skipping service start operation for varnish
+[ 132.148592] bitnami[1833]: 2022-07-27T17:29:46.992Z - info: Starting gonit monitoring service
+[ 134.579738] bitnami[1833]: 2022-07-27T17:29:49.420Z - info: Start monitoring all services from gonit
+[ 134.617155] bitnami[2193]: ## 2022-07-27 17:29:49+00:00 ## INFO ## Running /opt/bitnami/var/init/post-start/010_bitnami_agent_extra...
+[ 134.684889] bitnami[2193]: ## 2022-07-27 17:29:49+00:00 ## INFO ## Running /opt/bitnami/var/init/post-start/020_bitnami_agent...
+[[0;32m OK [0m] Created slice [0;1;39mUser Slice of UID 1000[0m.
+Starting [0;1;39mUser Runtime Directory /run/user/1000[0m...
+[[0;32m OK [0m] Finished [0;1;39mUser Runtime Directory /run/user/1000[0m.
+Starting [0;1;39mUser Manager for UID 1000[0m...
+[[0;32m OK [0m] Started [0;1;39mUser Manager for UID 1000[0m.
+[[0;32m OK [0m] Started [0;1;39mSession c1 of user bitnami[0m.
+[ 135.256022] bitnami[2193]: ## 2022-07-27 17:29:50+00:00 ## INFO ## Running /opt/bitnami/var/init/post-start/030_update_welcome_file...
+[ 135.268896] bitnami[2193]: ## 2022-07-27 17:29:50+00:00 ## INFO ## Running /opt/bitnami/var/init/post-start/040_bitnami_credentials_file...
+[ 135.346379] bitnami[2193]: ## 2022-07-27 17:29:50+00:00 ## INFO ## Running /opt/bitnami/var/init/post-start/050_clean_metadata...
+[[0;32m OK [0m] Started [0;1;39mLSB: bitnami init script[0m.
+[[0;32m OK [0m] Reached target [0;1;39mMulti-User System[0m.
+[[0;32m OK [0m] Reached target [0;1;39mGraphical Interface[0m.
+Starting [0;1;39mExecute cloud user/final scripts[0m...
+Starting [0;1;39mUpdate UTMP about System Runlevel Changes[0m...
+[[0;32m OK [0m] Finished [0;1;39mUpdate UTMP about System Runlevel Changes[0m.
+[ 136.035282] cloud-init[2384]: Cloud-init v. 20.4.1 running 'modules:final' at Wed, 27 Jul 2022 17:29:50 +0000. Up 135.97 seconds.
+ci-info: ++++++++++++++++++++++++++++Authorized keys from /home/bitnami/.ssh/authorized_keys for user bitnami+++++++++++++++++++++++++++++
+ci-info: +---------+-------------------------------------------------------------------------------------------------+---------+---------+
+ci-info: | Keytype | Fingerprint (sha256) | Options | Comment |
+ci-info: +---------+-------------------------------------------------------------------------------------------------+---------+---------+
+ci-info: | ssh-rsa | d6:b9:f8:d8:1c:dd:c9:ec:b9:bf:a1:b9:97:6a:c2:52:b4:11:be:3f:1f:5e:8a:ed:72:45:17:6d:c0:81:24:e0 | - | test |
+ci-info: +---------+-------------------------------------------------------------------------------------------------+---------+---------+
+<14>Jul 27 17:29:50 ec2:
+<14>Jul 27 17:29:50 ec2: #############################################################
+<14>Jul 27 17:29:50 ec2: -----BEGIN SSH HOST KEY FINGERPRINTS-----
+<14>Jul 27 17:29:50 ec2: 1024 SHA256:cSLtABMyMYpjAW0awAW/g+rLGAo00W+ZFVn9UPMa/uc root@ip-172-31-84-130 (DSA)
+<14>Jul 27 17:29:50 ec2: 256 SHA256:lE8+f2G/k89hVxwSG3ACpolm5QcJ/zu07FugsJnCyUM root@ip-172-31-84-130 (ECDSA)
+<14>Jul 27 17:29:51 ec2: 256 SHA256:fvUKEf2b06tzoEYdp7+VkYyOfQstZhOF5WJa0/gzUA0 root@ip-172-31-84-130 (ED25519)
+<14>Jul 27 17:29:51 ec2: 3072 SHA256:qzz1VOckdZQSS27FqtBjp6E4DXKlwfTy3HWxCzi5V1A root@ip-172-31-84-130 (RSA)
+<14>Jul 27 17:29:51 ec2: -----END SSH HOST KEY FINGERPRINTS-----
+<14>Jul 27 17:29:51 ec2: #############################################################
+-----BEGIN SSH HOST KEY KEYS-----
+ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJEKUYpFdpdjm9Sudgsv/JSpKr1b1UlDu/4b6F4nHY4LIGltBveRHC2agaAg1AYatIzTuKyd9hDSzokzhJLMYCg= root@ip-172-31-84-130
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOGuoAUApnT2oWMjd2HsCyed22gIsNSSuzbdDZTXXSbO root@ip-172-31-84-130
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCuV6NrFWFia0Dbir+zidZv+KRjvXuZBYeMNQ6tSLCWkBj7KpEbiKQFyT9j61rPqralfyTdd9nqX4fH8HAqpp8KmLRo/t/qA4/YfegT14x42ZG6ifAJ3hwPZawk2GZOXgO7PmtohJDVzBxGESwfd1NQLJxPhHG/5kTM6+KxspJejGM6MV47ACS+V7VJ9a5nDMzTniYm9E36FrHzdZ7OXLAuHCsbVZOICamejPwsFMOZJaIBX7hBPsRgbktORyXR2i2o2onab+aHeXzHBgeA7X+W7vEAhe3kRpTf5mQHatatnqUHOxoK6papi1zELYlIth2PostIgbtaEYZAMeQxyIhaBJGobRSzvBKUNLCgrJt0t04JaSgIKy8kO6TmoqxaobfVwLi+bJQXestnUllVllxHGqojb6MkjJB0fWBPVyLpr6Zzgg7n7rITWQEbC7oxDhNs/0xjKbBPrSxEQXoe7JOi6iKAjWmbQftkY0TrUAxXocJw6IJyWOug/s6TpaJzJvk= root@ip-172-31-84-130
+-----END SSH HOST KEY KEYS-----
+[ 136.268705] cloud-init[2384]: Cloud-init v. 20.4.1 finished at Wed, 27 Jul 2022 17:29:51 +0000. Datasource DataSourceEc2Local. Up 136.26 seconds
+[[0;32m OK [0m] Finished [0;1;39mExecute cloud user/final scripts[0m.
+[[0;32m OK [0m] Reached target [0;1;39mCloud-init target[0m.
+[[0;32m OK [0m] Removed slice [0;1;39msystem-modprobe.slice[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mCloud-init target[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mGraphical Interface[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mTimers[0m.
+[[0;32m OK [0m] Stopped [0;1;39mDaily apt upgrade and clean activities[0m.
+[[0;32m OK [0m] Stopped [0;1;39mDaily apt download activities[0m.
+[[0;32m OK [0m] Stopped [0;1;39mPeriodic ext4 Onliâ¦ata Check for All Filesystems[0m.
+[[0;32m OK [0m] Stopped [0;1;39mDiscard unused blocks once a week[0m.
+[[0;32m OK [0m] Stopped [0;1;39mDaily rotation of log files[0m.
+[[0;32m OK [0m] Stopped [0;1;39mDaily man-db regeneration[0m.
+[[0;32m OK [0m] Stopped [0;1;39mDaily Cleanup of Temporary Directories[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mSystem Time Synchronized[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mSystem Time Set[0m.
+[[0;32m OK [0m] Stopped [0;1;39mExecute cloud user/final scripts[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mMulti-User System[0m.
+Stopping [0;1;39mDeferred execution scheduler[0m...
+Stopping [0;1;39mLSB: bitnami init script[0m...
+Stopping [0;1;39mchrony, an NTP client/server[0m...
+[[0;32m OK [0m] Stopped [0;1;39mApply the settings specified in cloud-config[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mCloud-config availability[0m.
+Stopping [0;1;39mRegular background program processing daemon[0m...
+Stopping [0;1;39mD-Bus System Message Bus[0m...
+Stopping [0;1;39mSystem Logging Service[0m...
+Stopping [0;1;39mOpenBSD Secure Shell server[0m...
+Stopping [0;1;39mLoad/Save Random Seed[0m...
+Stopping [0;1;39mPermit User Sessions[0m...
+Stopping [0;1;39mUnattended Upgrades Shutdown[0m...
+[[0;32m OK [0m] Stopped [0;1;39mRegular background program processing daemon[0m.
+[[0;32m OK [0m] Stopped [0;1;39mD-Bus System Message Bus[0m.
+[[0;32m OK [0m] Stopped [0;1;39mSystem Logging Service[0m.
+[[0;32m OK [0m] Stopped [0;1;39mDeferred execution scheduler[0m.
+[[0;32m OK [0m] Stopped [0;1;39mUnattended Upgrades Shutdown[0m.
+[[0;32m OK [0m] Stopped [0;1;39mchrony, an NTP client/server[0m.
+[[0;32m OK [0m] Stopped [0;1;39mOpenBSD Secure Shell server[0m.
+[[0;32m OK [0m] Stopped [0;1;39mLoad/Save Random Seed[0m.
+[[0;32m OK [0m] Stopped [0;1;39mPermit User Sessions[0m.
+Stopping [0;1;39mUser Login Management[0m...
+[[0;32m OK [0m] Stopped [0;1;39mUser Login Management[0m.
+[ 3704.335066] bitnami[2800]: 2022-07-27T18:29:19.177Z - info: Saving configuration info to disk
+[ 3704.805947] bitnami[2800]: 2022-07-27T18:29:19.649Z - info: Stop monitoring services from gonit
+[ 3704.827649] bitnami[2800]: 2022-07-27T18:29:19.671Z - info: Performing service stop operation for php
+[ 3706.231358] bitnami[2800]: [38;5;6mphp [38;5;5m18:29:21.07 [0m[38;5;2mINFO [0m ==> php-fpm stopped
+[ 3706.242294] bitnami[2800]: 2022-07-27T18:29:21.074Z - info: Performing service stop operation for mariadb
+[ 3707.716199] bitnami[2800]: [38;5;6mmariadb [38;5;5m18:29:22.55 [0m[38;5;2mINFO [0m ==> mariadb stopped
+[ 3707.734701] bitnami[2800]: 2022-07-27T18:29:22.559Z - info: Performing service stop operation for apache
+[ 3709.151682] bitnami[2800]: [38;5;6mapache [38;5;5m18:29:23.99 [0m[38;5;2mINFO [0m ==> apache stopped
+[[0;32m OK [0m] Stopped [0;1;39mLSB: bitnami init script[0m.
+[ 3709.173399] bitnami[2800]: 2022-07-27T18:29:23.994Z - info: Skipping service stop operation for varnish
+[[0;32m OK [0m] Stopped target [0;1;39mBasic System[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mNetwork is Online[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mNetwork[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mPaths[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mRemote File Systems[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mSlices[0m.
+[[0;32m OK [0m] Removed slice [0;1;39mUser and Session Slice[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mSockets[0m.
+[[0;32m OK [0m] Closed [0;1;39mD-Bus System Message Bus Socket[0m.
+[[0;32m OK [0m] Closed [0;1;39mSyslog Socket[0m.
+[[0;32m OK [0m] Closed [0;1;39mUUID daemon activation socket[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mSystem Initialization[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mLocal Encrypted Volumes[0m.
+[[0;32m OK [0m] Stopped [0;1;39mDispatch Password â¦ts to Console Directory Watch[0m.
+[[0;32m OK [0m] Stopped [0;1;39mForward Password Râ¦uests to Wall Directory Watch[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mSwap[0m.
+Deactivating swap [0;1;39m/mnt/.bitnami.swap[0m...
+[[0;32m OK [0m] Stopped [0;1;39mInitial cloud-initâ¦ob (metadata service crawler)[0m.
+Stopping [0;1;39mifup for eth0[0m...
+Stopping [0;1;39mRaise network interfaces[0m...
+Stopping [0;1;39mUpdate UTMP about System Boot/Shutdown[0m...
+[[0;32m OK [0m] Stopped [0;1;39mRaise network interfaces[0m.
+[[0;32m OK [0m] Deactivated swap [0;1;39m/mnt/.bitnami.swap[0m.
+[[0;32m OK [0m] Stopped [0;1;39mUpdate UTMP about System Boot/Shutdown[0m.
+[[0;32m OK [0m] Stopped [0;1;39mCreate Volatile Files and Directories[0m.
+[[0;32m OK [0m] Stopped [0;1;39mifup for eth0[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mLocal File Systems[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mNetwork (Pre)[0m.
+Unmounting [0;1;39m/boot/efi[0m...
+[[0;32m OK [0m] Stopped [0;1;39mInitial cloud-init job (pre-networking)[0m.
+[[0;32m OK [0m] Stopped [0;1;39mGrow File System on /[0m.
+[[0;32m OK [0m] Removed slice [0;1;39msystem-systemd\x2dgrowfs.slice[0m.
+[[0;32m OK [0m] Stopped [0;1;39mApply Kernel Variables[0m.
+[[0;32m OK [0m] Stopped [0;1;39mLoad Kernel Modules[0m.
+[[0;32m OK [0m] Unmounted [0;1;39m/boot/efi[0m.
+[[0;32m OK [0m] Stopped target [0;1;39mLocal File Systems (Pre)[0m.
+[[0;32m OK [0m] Reached target [0;1;39mUnmount All Filesystems[0m.
+[[0;32m OK [0m] Stopped [0;1;39mCreate Static Device Nodes in /dev[0m.
+[[0;32m OK [0m] Stopped [0;1;39mCreate System Users[0m.
+[[0;32m OK [0m] Stopped [0;1;39mRemount Root and Kernel File Systems[0m.
+[[0;32m OK [0m] Reached target [0;1;39mShutdown[0m.
+[[0;32m OK [0m] Reached target [0;1;39mFinal Step[0m.
+[[0;32m OK [0m] Finished [0;1;39mPower-Off[0m.
+[[0;32m OK [0m] Reached target [0;1;39mPower-Off[0m.
+[ 3711.963343] systemd-shutdown[1]: Syncing filesystems and block devices.
+[ 3712.007453] systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+[ 3712.018979] systemd-journald[195]: Received SIGTERM from PID 1 (systemd-shutdow).
+[ 3712.040758] systemd-shutdown[1]: Sending SIGKILL to remaining processes...
+[ 3712.052461] systemd-shutdown[1]: Unmounting file systems.
+[ 3712.060432] [3010]: Remounting '/' read-only in with options 'discard,errors=remount-ro'.
+[ 3712.091553] EXT4-fs (xvda1): re-mounted. Opts: discard,errors=remount-ro
+[ 3712.112965] systemd-shutdown[1]: All filesystems unmounted.
+[ 3712.119705] systemd-shutdown[1]: Deactivating swaps.
+[ 3712.125138] systemd-shutdown[1]: All swaps deactivated.
+[ 3712.131072] systemd-shutdown[1]: Detaching loop devices.
+[ 3712.136368] systemd-shutdown[1]: All loop devices detached.
+[ 3712.141907] systemd-shutdown[1]: Stopping MD devices.
+[ 3712.147084] systemd-shutdown[1]: All MD devices stopped.
+[ 3712.152105] systemd-shutdown[1]: Detaching DM devices.
+[ 3712.158223] systemd-shutdown[1]: All DM devices detached.
+[ 3712.165078] systemd-shutdown[1]: All filesystems, swaps, loop devices, MD devices and DM devices detached.
+[ 3712.180959] systemd-shutdown[1]: Syncing filesystems and block devices.
+[ 3712.189296] systemd-shutdown[1]: Powering off.
+[ 3712.308032] ACPI: Preparing to enter system sleep state S5
+[ 3712.317766] reboot: Power down
