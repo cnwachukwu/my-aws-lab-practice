@@ -7,6 +7,8 @@ Note: In most cases, the guessed user name is correct. However, read your AMI us
 
 In my case the username was bitnami i.e ssh -i "test.pem" bitnami@ec2-3-83-137-2.compute-1.amazonaws.com
 
+#System Log
+
 [ 2.143475] Loaded X.509 cert 'Debian Secure Boot CA: 6ccece7e4c6c0d1f6149f3dd27dfcc5cbb419ea1'
 [ 2.155657] Loaded X.509 cert 'Debian Secure Boot Signer 2021 - linux: 4b6ef5abca669825178e052c84667ccbc0531f8c'
 [ 2.168915] Key type .\_fscrypt registered
@@ -188,7 +190,7 @@ Starting [0;1;39mUpdate UTMP about System Boot/Shutdown[0m...
 [[0;32m OK [0m] Finished [0;1;39mUpdate UTMP about System Boot/Shutdown[0m.
 [[0;32m OK [0m] Found device [0;1;39m/sys/subsystem/net/devices/eth0[0m.[ 5.144948] audit: type=1400 audit(1658942859.748:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=303 comm="apparmor_parser"
 
-[ 5.162370] audit: type=1400 audit(1658942859.748:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=303 comm="apparmor_parser"
+[ 5.162370] audit: type=1400 audit(1658942859.748:4): apparmor="STATUS" operation="profile*load" profile="unconfined" name="man_filter" pid=303 comm="apparmor_parser"
 [ 5.178143] audit: type=1400 audit(1658942859.748:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=303 comm="apparmor_parser"
 [ 5.194715] audit: type=1400 audit(1658942859.764:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/haveged" pid=307 comm="apparmor_parser"
 [ 5.209740] audit: type=1400 audit(1658942859.768:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=309 comm="apparmor_parser"
@@ -278,13 +280,13 @@ Starting [0;1;39mRemove Stale Onliâ¦t4 Metadata Check Snapshots[0m...
 [ 58.187795] cloud-init[464]: |o . o . |
 [ 58.196610] cloud-init[464]: |+ ..|
 Starting [0;1;39mSystem Logging Service[0m...
-[ 58.209468] cloud-init[464]: |_. ..|
+[ 58.209468] cloud-init[464]: |*. ..|
 [ 58.215726] cloud-init[464]: |o+. E|
 [ 58.223692] cloud-init[464]: +----[SHA256]-----+
 Starting [0;1;39mOpenBSD Secure Shell server[0m...
 [ 58.235352] cloud-init[464]: Generating public/private ecdsa key pair.
 Starting [0;1;39mUser Login Management[0m...
-[ 58.255358] cloud-init[464]: Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key
+[ 58.255358] cloud-init[464]: Your identification has been saved in /etc/ssh/ssh*host_ecdsa_key
 Starting [0;1;39mPermit User Sessions[0m...
 [[0;32m OK [0m] Started [0;1;39mDeferred execution scheduler[0m.
 [ 58.303454] cloud-init[464]: Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub
@@ -300,7 +302,7 @@ Starting [0;1;39mPermit User Sessions[0m...
 [ 58.418204] cloud-init[464]: | o .o+ ...|
 [ 58.425855] cloud-init[464]: | E . S++ o o|
 [ 58.433253] cloud-init[464]: | + . = + +o . o.|
-[ 58.441745] cloud-init[464]: | _ + . = .. .o+|
+[ 58.441745] cloud-init[464]: | * + . = .. .o+|
 [ 58.455349] cloud-init[464]: | o . o ..++|
 [ 58.466020] cloud-init[464]: | o. .=|
 [ 58.480548] cloud-init[464]: +----[SHA256]-----+
@@ -375,7 +377,7 @@ Starting [0;1;39mDaily man-db regeneration[0m...
 [ 73.571173] bitnami[1029]: [38;5;6mphp [38;5;5m17:28:48.38 [0m[38;5;2mINFO [0m ==> Setting PHP expose_php option
 [ 78.626102] bitnami[1029]: [38;5;6mphp [38;5;5m17:28:53.46 [0m[38;5;2mINFO [0m ==> php-fpm started
 [ 78.641953] bitnami[1029]: 2022-07-27T17:28:53.468Z - info: Initializing module mariadb
-[ 90.886084] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:28:53.85 [0m[38;5;2mINFO [0m ==> Validating settings in MYSQL*_/MARIADB\__ env vars
+[ 90.886084] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:28:53.85 [0m[38;5;2mINFO [0m ==> Validating settings in MYSQL*\_/MARIADB\_\_ env vars
 [ 90.901640] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:28:53.86 [0m[38;5;2mINFO [0m ==> Initializing mariadb database
 [ 90.914180] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:28:53.88 [0m[38;5;2mINFO [0m ==> Updating 'my.cnf' with custom configuration
 [ 90.929926] bitnami[1029]: [38;5;6mmariadb [38;5;5m17:28:53.89 [0m[38;5;2mINFO [0m ==> Setting user option
