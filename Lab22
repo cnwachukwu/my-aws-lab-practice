@@ -1,0 +1,53 @@
+Connecting to EC2 Windows Instances
+
+Launching an EC2 window instance and connect to it using
+Remote Desktop Protocol (RDP)
+
+Download RDP for windows 10 or any other windows RDP of your choice
+Enter Public DNS, username & password (decrytpted key)
+
+
+#System log
+
+2022/07/27 20:56:47Z: Windows sysprep configuration complete.
+2022/07/27 20:56:51Z: Message: Waiting for meta-data accessibility...
+2022/07/27 20:56:51Z: Message: Meta-data is now available.
+2022/07/27 20:56:52Z: AMI Origin Version: 2022.07.13
+2022/07/27 20:56:52Z: AMI Origin Name: Windows_Server-2016-English-Full-Base
+2022/07/27 20:56:52Z: OS: Microsoft Windows NT 10.0
+2022/07/27 20:56:52Z: OsProductName: Windows Server 2016 Datacenter
+2022/07/27 20:56:52Z: OsInstallOption: Full
+2022/07/27 20:56:52Z: OsVersion: 10.0
+2022/07/27 20:56:52Z: OsBuildLabEx: 14393.5246.amd64fre.rs1_release.220701-1744
+2022/07/27 20:56:52Z: OsCurrentBuild: 14393
+2022/07/27 20:56:52Z: OsReleaseId: 1607
+2022/07/27 20:56:53Z: Language: en-US
+2022/07/27 20:56:53Z: TimeZone: Coordinated Universal Time
+2022/07/27 20:56:53Z: Offset: UTC 00:00:00
+2022/07/27 20:56:53Z: AMI-ID: ami-05e2b7014cc33b105
+2022/07/27 20:56:53Z: Instance-ID: i-0f48c66f320aa220d
+2022/07/27 20:56:53Z: Instance Type: t2.micro
+2022/07/27 20:56:56Z: Driver: AWS PV Driver Package v8.4.2 
+2022/07/27 20:56:57Z: Launch: EC2 Launch v1.3.2003691
+2022/07/27 20:56:57Z: SSM: Amazon SSM Agent v3.1.1188.0
+2022/07/27 20:56:57Z: RDPCERTIFICATE-SUBJECTNAME: EC2AMAZ-SOG0BHN
+2022/07/27 20:56:57Z: RDPCERTIFICATE-THUMBPRINT: DCE2FB1177C5C90B2DD1C6EEA6BC27417F2279B1
+2022/07/27 20:57:09Z: HibernationEnabled: false
+2022/07/27 20:57:12Z: Username: Administrator
+2022/07/27 20:57:12Z: Password: <Password>
+cQAHAi9sLX4QZV4WSmAwBBmJowHKSfCwN/UpLh0QM4H59dPQcwklzTMdfSvz7zhgjjPlAa1hFOwvah75cjnkOKVdLmta6UvFMMiS35Opn+h+0ok1S4xtFcZDllvZ6k2QhuRz9MpQgV+UfUo42RU2k6rk0jjRp3AKkUjUPR6bPOxg6dlgSvQbEMAhccxvE28U0i36lqX2n8g08RR/C8uTOP+ARcMumJBTU1uAZQbLEekguabUya0G39axTNDBge6gtNsyLJIdhuMY2klIuLlgRckl+Dvv5rKFBKfPAqGEFiBgl9a/D5zfo6EJtRQnHQ2wRgjPql/qxgViaKYJ7vur7w==
+</Password>
+2022/07/27 20:57:13Z: Message: Windows is Ready to use
+2022/07/27 20:57:49Z: EC2LaunchTelemetry: IsTelemetryEnabled=true
+2022/07/27 20:57:49Z: EC2LaunchTelemetry: AgentOsArch=windows_amd64
+2022/07/27 20:57:49Z: EC2LaunchTelemetry: IsAgentScheduledPerBoot=false
+2022/07/27 20:57:49Z: EC2LaunchTelemetry: AgentCommandErrorCode=0
+2022/07/27 20:57:50Z: Amazon SSM Agent v3.1.1188.0 is running
+2022/07/27 20:57:50Z: OsProductName: Windows Server 2016 Datacenter
+2022/07/27 20:57:50Z: OsInstallOption: Full
+2022/07/27 20:57:50Z: OsVersion: 10.0
+2022/07/27 20:57:50Z: OsBuildLabEx: 14393.5246.amd64fre.rs1_release.220701-1744
+2022/07/27 20:57:51Z: Driver: AWS PV Driver Package v8.4.2
+2022/07/27 20:57:55Z: Driver: AWS PV Network Device v8.2.5.32
+2022/07/27 20:57:55Z: Driver: AWS PV Storage Host Adapter v8.4.1.6
+
